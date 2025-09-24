@@ -2,11 +2,14 @@
 
 namespace program
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main(String[] args)
         {
-            Console.WriteLine("Hello, Akshai! Welcome to C# programming.");
+        
+            double num2 = 45.67;
+            int num3 = (int)num2;
+            Console.WriteLine(num3 + "all");
         }
     }
 }
