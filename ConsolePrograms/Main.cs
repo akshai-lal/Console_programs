@@ -20,9 +20,11 @@ namespace ConsolePrograms
             //Console.WriteLine(reverseAIntger());
             //DictonaryProgram();
             // CountLettersInAString();
-            //countNumberOfConsonants();
+            // countNumberOfConsonants();
             //fileOperations();
-            switchStatement();
+            //switchStatement();
+            //findCountOfCharacters();
+            Console.WriteLine(reverseAIntger());
         }
 
 
