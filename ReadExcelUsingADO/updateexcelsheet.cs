@@ -9,7 +9,7 @@ namespace DataValidation
 {
     internal class updateexcelsheet
     {
-        static void Main()
+        public static void updateExcelSheet()
         {
             string filePath = @"C:\Users\Akshai.Lal\OneDrive - Neudesic\Student_date.xlsx";
             string sheetName = "Sheet1$";
@@ -20,8 +20,7 @@ namespace DataValidation
                 return;
             }
 
-            string connString =
-                "Provider=Microsoft.ACE.OLEDB.12.0;" +
+            string connString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
                 $"Data Source={filePath};" +
                 "Extended Properties='Excel 12.0 Xml;HDR=YES;'";
 

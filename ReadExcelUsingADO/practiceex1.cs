@@ -1,29 +1,27 @@
-﻿//using System;
-//using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 
-//class Program
-//{
-//    static void Main()
-//    {
-//        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TestDatabase;Integrated Security=True;";
-//        SqlConnection conn = new SqlConnection(connectionString);
+public class Practiceex1
 
-//        conn.Open();
+{
+   public static void practiceex()
+    {
+        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TestDatabase;Integrated Security=True;";
+        SqlConnection conn = new SqlConnection(connectionString);
 
-//        // 1️⃣ Prepare SQL command
-//        string query = "SELECT * FROM FoodProducts";
-//        SqlCommand cmd = new SqlCommand(query, conn);
+        conn.Open();
 
-//        // 2️⃣ Execute command and read data
-//        SqlDataReader reader = cmd.ExecuteReader();
+        string query = "SELECT * FROM FoodProducts";
+        SqlCommand cmd = new SqlCommand(query, conn);
 
-//        // 3️⃣ Loop through rows
-//        while (reader.Read())
-//        {
-//            Console.WriteLine($"{reader["ProductID"]} - {reader["ProductName"]} - {reader["Category"]} - {reader["Price"]}");
-//        }
+        SqlDataReader reader = cmd.ExecuteReader();
 
-//        reader.Close();
-//        conn.Close();
-//    }
-//}
+        while (reader.Read())
+        {
+            Console.WriteLine($"{reader["ProductID"]} - {reader["ProductName"]} - {reader["Category"]} - {reader["Price"]}");
+        }
+
+        reader.Close();
+        conn.Close();
+    }
+}
