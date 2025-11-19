@@ -41,7 +41,7 @@ namespace DataValidation
 
                 if (oldValue == null || oldValue == DBNull.Value)
                 {
-                    Console.WriteLine("❌ Record not found!");
+                    Console.WriteLine("Record not found!");
                     return;
                 }
 
@@ -53,11 +53,11 @@ namespace DataValidation
 
                 if (rowsAffected > 0)
                 {
-                    Console.WriteLine("✅ Age updated successfully!");
+                    Console.WriteLine("Age updated successfully!");
                 }
                 else
                 {
-                    Console.WriteLine("⚠️ No rows updated.");
+                    Console.WriteLine("No rows updated.");
                 }
 
                 OleDbCommand confirmCmd = new OleDbCommand(selectQuery, conn);

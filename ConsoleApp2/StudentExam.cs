@@ -5,12 +5,12 @@ namespace ConsoleApp2
 {
     public class StudentExam
     {
-        public String Name { get; set; }
-        public String Address { get; set; }
-        public double MathsMark { get; set; }
-        public double PhysicsMark { get; set; }
-        public double ChemistryMark { get; set; }
-        public double BiologyMark { get; set; }
+        private String Name { get; set; }
+        private String Address { get; set; }
+        private double MathsMark { get; set; }
+        private double PhysicsMark { get; set; }
+        private double ChemistryMark { get; set; }
+        private double BiologyMark { get; set; }
 
         public StudentExam(String name, String address, double math, double physicsMark, double biologyMark, double chemistrymark)
         {

@@ -15,7 +15,7 @@ namespace ConsolePrograms
             //convertDoubleToInt();
             //squareRootOfGivenNumber();
             //fibanccciBetweenTwoNumbers();
-            // printPyramid();
+             //printPyramid();
             //printPyramid2();
             //Console.WriteLine(reverseAIntger());
             //DictonaryProgram();
@@ -24,7 +24,7 @@ namespace ConsolePrograms
             //fileOperations();
             //switchStatement();
             //findCountOfCharacters();
-            Console.WriteLine(reverseAIntger());
+            //Console.WriteLine(reverseAIntger());
         }
 
 

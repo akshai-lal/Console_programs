@@ -32,7 +32,7 @@ namespace DataValidation
                         deleteTable(conn);
                         break;
                     case 3:
-                        Console.WriteLine("Exiting.....");
+                        Console.WriteLine("Exiting the program");
                         break;
                     default:
                         Console.WriteLine("Invalid choice");
